@@ -1,0 +1,63 @@
+/* Write your CSS code here */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  margin: auto;
+  max-width: 1110px;
+}
+@media screen and (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .home-content {
+    align-items: flex-start;
+    text-align: start;
+  }
+}
+.home-mobile-image {
+  width: 206px;
+}
+@media screen and (min-width: 768px) {
+  .home-mobile-image {
+    display: none;
+  }
+}
+
+.home-desk-image {
+  max-width: 450px;
+  margin-left: 85px;
+}
+
+@media screen and (max-width: 767px) {
+  .home-desk-image {
+    display: none;
+  }
+}
+
+.content-button {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  outline: none;
+  background-color: #0b69ff;
+}

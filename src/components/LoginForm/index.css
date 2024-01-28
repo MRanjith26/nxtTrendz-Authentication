@@ -1,0 +1,121 @@
+/* Write your CSS code here */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  max-width: 1110px;
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .login-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 992px) {
+  .login-form {
+    width: 350px;
+    flex-shrink: 0;
+    box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+    padding: 64px 48px 64px 48px;
+  }
+}
+
+.login-mobile-image {
+  width: 165px;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+@media screen and (min-width: 992px) {
+  .login-mobile-image {
+    display: none;
+  }
+}
+
+.login-image {
+  width: 278px;
+}
+
+@media screen and (min-width: 992px) {
+  .login-image {
+    width: 60%;
+    max-width: 524px;
+    flex-shrink: 1;
+    margin-right: 20px;
+  }
+}
+
+.login-desktop-image {
+  width: 185px;
+}
+
+@media screen and (max-width: 991px) {
+  .login-desktop-image {
+    display: none;
+  }
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.password-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.login-label {
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: 500;
+}
+.input-text {
+  width: 250px;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px;
+  background-color: #d7dfe9;
+  border: none;
+  outline: none;
+  color: #000000;
+}
+.form-button {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #0967d2;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.error-msg {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ff0b37;
+  align-self: flex-start;
+  font-weight: 550;
+}
+@media screen and (max-width: 768px) {
+  .error-msg {
+    align-self: center;
+  }
+}
